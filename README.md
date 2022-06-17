@@ -13,7 +13,7 @@ Files containing Monty byte codes usually have the .m extension. Most of the ind
 There is not more than one instruction per line. There can be any number of spaces before or after the opcode and its argument:
 
 ```
-martin@ubuntu:~/monty$ cat -e bytecodes/000.m
+
 push 0$
 push 1$
 push 2$
@@ -23,13 +23,13 @@ push 4$
     push 5    $
       push    6        $
 pall$
-martin@ubuntu:~/monty$
+
 ```
 
 Monty byte code files can contain blank lines (empty or made of spaces only, and any additional text after the opcode or its required argument is not taken into account:
 
 ```
-martin@ubuntu:~/monty$ cat -e bytecodes/001.m
+
 push 0 Push 0 onto the stack$
 push 1 Push 1 onto the stack$
 $
@@ -45,7 +45,7 @@ $
       push    6        $
 $
 pall This is the end of our program. Monty is awesome!$
-martin@ubuntu:~/monty$
+
 ```
 
 ## Compilation
@@ -82,8 +82,6 @@ The Simple Monty ByteCode Interpreter supports the following operations:
 
 ### Examples
 
-```
-martin@ubuntu:~/monty$ cat bytecodes/07.m
 push 1
 push 2
 push 3
@@ -94,18 +92,18 @@ pop
 pall
 pop
 pall
-martin@ubuntu:~/monty$ ./monty bytecodes/07.m
+
 3
 2
 1
 2
 1
 1
-martin@ubuntu:~/monty$
+
 ```
 
 ```
-martin@ubuntu:~/monty$ cat bytecodes/31.m
+
 push 1
 push 2
 push 3
@@ -120,13 +118,13 @@ push 104
 push 99
 push 83
 pstr
-martin@ubuntu:~/monty$ ./monty bytecodes/31.m
+
 School
-martin@ubuntu:~/monty$
+
 ```
 
 ```
-martin@ubuntu:~/monty$ cat bytecodes/12.m
+
 push 1
 push 2
 push 3
@@ -134,17 +132,15 @@ pall
 add
 pall
 
-martin@ubuntu:~/monty$ ./monty bytecodes/12.m
 3
 2
 1
 5
 1
-martin@ubuntu:~/monty$
+
 ```
 
 ## Credits
 
 Written by
-- [Maria Kimani](https://github.com/Mariagoretti05)
-- [Martin Mulwa](https://github.com/martinmulwa)
+- [Githinji Kingori](https://github.com/GMercury)
